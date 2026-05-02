@@ -21,7 +21,8 @@ jobs:
                 CURRENT_DATE=$(date +%c)
                 LATEST_COMMIT_ID=$(git rev-parse --short=6 HEAD)
                 echo "$CURRENT_DATE"
-                echo "$$LATEST_COMMIT_ID"
+                echo "$LATEST_COMMIT_ID"
+                
 
 
     
