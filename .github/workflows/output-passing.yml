@@ -15,6 +15,17 @@ jobs:
         steps:
           - name: job purpose
             run: echo "Generating repository information..."
+          - name: Set output for date and commit SHA
+            id: generate
+            run: |
+                printenv
+                #CURRENT_DATE=$(date +%c)
+                #LATEST_COMMIT_ID=$(git rev-parse --short=6 HEAD)
+                
+
+              echo "DATE=$(date)" >> $GITHUB_ENV
+              echo "COMMIT_SHA=$(git rev-parse HEAD)" >> $GITHUB_ENV
+             
           
 
               
