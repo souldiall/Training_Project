@@ -18,9 +18,10 @@ jobs:
           - name: Set output for date and commit SHA
             id: generate
             run: |
-                printenv
-                #CURRENT_DATE=$(date +%c)
-                #LATEST_COMMIT_ID=$(git rev-parse --short=6 HEAD)
+                CURRENT_DATE=$(date +%c)
+                LATEST_COMMIT_ID=$(git rev-parse --short=6 HEAD)
+                echo "$CURRENT_DATE"
+                echo "$$LATEST_COMMIT_ID"
 
 
     
