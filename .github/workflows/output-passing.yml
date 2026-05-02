@@ -22,7 +22,7 @@ jobs:
                 CURRENT_DATE=$(date +%c)
                 LATEST_COMMIT_ID=$(git rev-parse --short=6 HEAD)
                 LATEST_COMMIT_ID=$(GITHUB_SHA::6)
-                echo "$Build at $CURRENT_DATE"
+                echo "Build at $CURRENT_DATE"
                 echo "Build commit ref -> $LATEST_COMMIT_ID"
 
 
