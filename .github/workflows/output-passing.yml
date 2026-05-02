@@ -1,0 +1,25 @@
+# Provide the Actions' name
+name: Job Output and dependencies
+on:
+    push:
+        branches:
+            - 'hotfix/*'
+    pull_request:
+        branches:
+            - 'main'
+    workflow_dispatch:
+      
+jobs:
+    generate-info:
+        runs-on: ubuntu-latest
+        steps:
+          - name: job purpose
+          - run: echo "Generating repository informations..."
+          
+
+              
+
+
+
+
+
