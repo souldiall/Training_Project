@@ -30,10 +30,11 @@ jobs:
               echo "commit_sha=$LATEST_COMMIT_SHA" >> $GITHUB_OUTPUT
 
   consume-info:
-     runs-on: ubuntu-latest
-     steps:
-       - name: Testing
-         run: echo "Jobs running in parallel"
+    needs: generate-info
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing
+        run: echo "Jobs running in parallel"
 
 
 
