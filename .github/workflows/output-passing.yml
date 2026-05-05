@@ -7,8 +7,7 @@ on:
     pull_request:
         branches:
             - 'main'
-    workflow_dispatch:
-      
+    workflow_dispatch:   
 jobs:
     generate-info:
         runs-on: ubuntu-latest
