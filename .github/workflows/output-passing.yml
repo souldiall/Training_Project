@@ -14,14 +14,14 @@ jobs:
         runs-on: ubuntu-latest
         steps:
           - uses: actions/checkout@v6
-          - name: job purpose
+          - name: purpose
             run: echo "Generating repository information..."
-          - name: Set output for date and commit SHA
+          - name: Set outputs for date and commit SHA
             id: generate
             run: |
                 CURRENT_DATE=$(date +%c)
                 #LATEST_COMMIT_ID=$(git rev-parse --short=6 HEAD)
-                LATEST_COMMIT_SHA=$(GITHUB_SHA::6)
+                LATEST_COMMIT_SHA=${GITHUB_SHA::6}
                 echo "Build at $CURRENT_DATE"
                 echo "Build commit ref -> $LATEST_COMMIT_SHA"
 
