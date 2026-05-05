@@ -6,7 +6,7 @@ on:
         - "hotfix/**"
     pull_request:
       branches:
-        - 'main'
+        - main
     workflow_dispatch:   
 jobs:
     generate-info:
