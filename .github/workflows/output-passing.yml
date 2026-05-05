@@ -22,13 +22,14 @@ jobs:
           id: generate
           run: |
               CURRENT_DATE=$(date +%c)
-              #LATEST_COMMIT_ID=$(git rev-parse --short=6 HEAD)
+              # LATEST_COMMIT_ID=$(git rev-parse --short=6 HEAD)
               LATEST_COMMIT_SHA=${GITHUB_SHA::6}
               echo "Build at $CURRENT_DATE"
               echo "Build commit ref -> $LATEST_COMMIT_SHA"
               echo: "current date=$CURRENT_DATE" >> $GITHUB_OUTPUT
               echo: "commit_sha=$LATEST_COMMIT_SHA" >> $GITHUB_OUTPUT
-              printenv
+        
+              
 
 
 
