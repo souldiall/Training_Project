@@ -38,7 +38,7 @@ jobs:
             echo  "==========================="
             echo "Received output of current date which is: ${{ needs.generate-info.outputs.current_date }}"
             echo "+++++++++++++++++++++++++++++"
-            echo "Also receive output of latestcommit SHA which is: ${{ needs.generate-info.outputs.commit_sha }}"
+            echo "Receive output of latestcommit SHA which is: ${{ needs.generate-info.outputs.commit_sha }}"
             echo "============================"
 
 
