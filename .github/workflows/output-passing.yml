@@ -1,0 +1,65 @@
+# Provide the Actions' name
+name: Job Output and dependencies
+on:
+    push:
+      branches:
+        - 'hotfix/**'
+    pull_request:
+      branches:
+        - 'main'
+    workflow_dispatch:   
+jobs:
+  generate-info:
+      runs-on: ubuntu-latest
+      outputs:
+         current_date: ${{ steps.generate.outputs.current_date }}
+         commit_sha: ${{ steps.generate.outputs.commit_sha }}
+      steps:
+        - uses: actions/checkout@v6
+        - name: purpose
+          run: echo "Generating repository information..."
+        - name: Set outputs for date and commit SHA
+          id: generate
+          run: |
+              CURRENT_DATE=$(date +%c)
+              # LATEST_COMMIT_ID=$(git rev-parse --short=6 HEAD)
+              LATEST_COMMIT_SHA=${GITHUB_SHA::6}
+              echo "Build at $CURRENT_DATE"
+              echo "Build commit ref -> $LATEST_COMMIT_SHA"
+              echo "current date=$CURRENT_DATE" >> $GITHUB_OUTPUT
+              echo "commit_sha=$LATEST_COMMIT_SHA" >> $GITHUB_OUTPUT
+
+  consume-info:
+    needs: generate-info
+    runs-on: ubuntu-latest
+    steps:
+      - name: Testing
+        run: |
+            echo  "==========================="
+            echo "Received output of current date which is: ${{ needs.generate-info.outputs.current_date }}"
+            echo "+++++++++++++++++++++++++++++"
+            echo "Receive output of latestcommit SHA which is: ${{ needs.generate-info.outputs.commit_sha }}"
+            echo "============================"
+
+
+
+
+
+
+              
+
+        
+              
+
+
+
+    
+             
+          
+
+              
+
+
+
+
+
