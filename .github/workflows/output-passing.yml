@@ -3,7 +3,7 @@ name: Job Output and dependencies
 on:
     push:
       branches:
-        - 'hotfix/*'
+        - 'hotfix/**'
     pull_request:
       branches:
         - 'main'
