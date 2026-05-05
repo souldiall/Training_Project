@@ -28,6 +28,8 @@ jobs:
               echo "Build commit ref -> $LATEST_COMMIT_SHA"
               echo "current date=$CURRENT_DATE" >> $GITHUB_OUTPUT
               echo "commit_sha=$LATEST_COMMIT_SHA" >> $GITHUB_OUTPUT
+              printenv
+
         
               
 
