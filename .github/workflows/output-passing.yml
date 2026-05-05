@@ -35,11 +35,11 @@ jobs:
     steps:
       - name: Testing
         run: |
-          echo  ============================"
-          echo "Received output of current date which is: ${{ needs.generate-info.outputs.current_date }}"
-          echo "+++++++++++++++++++++++++++++"
-          echo "Receive output of commit SHA which is: ${{ needs.generate-info.outputs.commit_sha }}"
-          echo "============================"
+            echo  "==========================="
+            echo "Received output of current date which is: ${{ needs.generate-info.outputs.current_date }}"
+            echo "+++++++++++++++++++++++++++++"
+            echo "Also receive output of latestcommit SHA which is: ${{ needs.generate-info.outputs.commit_sha }}"
+            echo "============================"
 
 
 
