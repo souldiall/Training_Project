@@ -12,6 +12,9 @@ on:
 jobs:
     generate-info:
         runs-on: ubuntu-latest
+        outputs:
+            current_date: ${{ steps.generate.outputs.current_date }}
+            commit_sha: ${{ steps.generate.outputs.commit_sha }}
         steps:
           - uses: actions/checkout@v6
           - name: purpose
@@ -24,6 +27,9 @@ jobs:
                 LATEST_COMMIT_SHA=${GITHUB_SHA::6}
                 echo "Build at $CURRENT_DATE"
                 echo "Build commit ref -> $LATEST_COMMIT_SHA"
+                echo: "current date=$CURRENT_DATE" >> $GITHUB_OUTPUT
+                echo: "commit_sha=$LATEST" >> $GITHUB_OUTPUT
+                printenv
 
 
 
