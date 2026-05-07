@@ -36,8 +36,8 @@ jobs:
       consume_commit_sha: ${{ needs.generate-info.outputs.commit_sha }}
     runs-on: ubuntu-latest
     steps:
-      - name: Print received outputs
-        run: |
+       - name: Print received outputs
+         run: |
             echo  "==========================="
             echo "Received output of current date which is: ${{ needs.generate-info.outputs.current_date }}"
             echo "+++++++++++++++++++++++++++++"
