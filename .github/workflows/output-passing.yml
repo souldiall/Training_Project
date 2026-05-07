@@ -48,7 +48,7 @@ jobs:
      runs-on: ubuntu-latest
      steps:
       - name: Display final report
-        run: echo "Workflow completed successfully on ${{ needs.consume-info.outputs.consume_current_date }} using commit ${{ needs.consume-info.outputs.consume_commit_sha }}"
+        run: echo "Workflow completed successfully on ${{ needs.consume-info.outputs.consume_CURRENT_DATE }} using commit ${{ needs.consume-info.outputs.consume_commit_sha }}"
           
 
 
