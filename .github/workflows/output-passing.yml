@@ -39,7 +39,7 @@ jobs:
        - name: Print received outputs
          run: |
              echo  "==========================="
-             echo "Received output of current date which is: ${{ needs.generate-info.outputs.current_date }}"
+             echo "Received output of current date which is: ${{ needs.generate-info.outputs.CURRENT_DATE }}"
              echo "+++++++++++++++++++++++++++++"
              echo "Receive output of latestcommit SHA which is: ${{ needs.generate-info.outputs.commit_sha }}"
              echo "============================"
