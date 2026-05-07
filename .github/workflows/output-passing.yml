@@ -47,7 +47,7 @@ jobs:
     needs: consume-info
     runs-on: ubuntu-latest
     steps:
-      - name: Print received output
+      - name: Display final report
         run: echo "Workflow completed successfully on ${{ needs.consume-info.outputs.consum_current_date }} using commit ${{ needs.consume-info.outputs.consum_commit_sha }}"
           
 
