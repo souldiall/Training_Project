@@ -4,7 +4,7 @@ parameters:
   VpcId: AWS::EC2::VPC::Id
   SubnetId: AWS::EC2::Subnet::Id
   KeyName: AWS::EC2::KeyPair::KeyName
-  CustomHtml: "<h1>Hello from Ubuntu via Git Sync!</h1>"
+  CustomHtml: "<h1>Hello Ubuntu Git Sync!</h1>"
   InstanceName: UbuntuServer
   SelectedRegion: us-east-1
   AvailabilityZone: us-east-1a
