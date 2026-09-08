@@ -1,4 +1,4 @@
-Folder38-filter-al2023
+# Folder38-filter-al2023
 Terraform configuration for deploying three Amazon Linux 2023 EC2 instances using:
 
 for_each with a map(string)
@@ -9,7 +9,7 @@ Clean, reusable infrastructure code
 
 This project demonstrates how to create multiple EC2 instances using map keys as instance names.
 
- Project Overview
+ ## Project Overview
 This Terraform project creates:
 
 3 EC2 instances
@@ -22,7 +22,7 @@ Instances tagged using each.key
 
 This avoids hard‑coding AMI IDs and makes your instance list fully configurable.
 
- Folder Structure
+ ## Folder Structure
 Code
 Folder38-filter-al2023/
 │
@@ -30,12 +30,12 @@ Folder38-filter-al2023/
 ├── variables.tf
 ├── outputs.tf
 └── README.md
- AL2023 AMI Filtering
+### AL2023 AMI Filtering
 Amazon Linux 2023 AMIs follow the naming pattern:
 
 Code
 al2023-ami-*-x86_64
-Terraform filter:# "Fetches the most recent Amazon Linux 2023 AMI ID based on specified filters."
+Terraform filter: "Fetches the most recent Amazon Linux 2023 AMI ID based on specified filters."
 data "aws_ami" "al2023" {
   most_recent = true
   
@@ -74,7 +74,7 @@ data "aws_ami" "al2023" {
 
   owners = ["amazon"]
 }
-This ensures your EC2 instances always use the latest AL2023 image.
+### This ensures your EC2 instances always use the latest AL2023 image.
 
  Instance Map (for_each)
 Your instance list is defined as a map(string):
@@ -93,7 +93,7 @@ variable "instances" {
 Keys = instance names
 Values = instance types
 
- EC2 Instance Creation Using for_each
+### EC2 Instance Creation Using for_each
 hcl
 resource "aws_instance" "al2023_servers" {
   for_each      = var.instances
@@ -112,18 +112,13 @@ server2
 
 server3
 
-All running Amazon Linux 2023.How to Deploy
+All running Amazon Linux 2023.
+### How to Deploy
 1. Initialize Terraform
-Code
 terraform init
 2. Validate
-Code
 terraform validate
 3. Preview
-Code
 terraform plan
 4. Deploy
-Code
-terraform applyDestroy Infrastructure
-Code
 terraform destroy
