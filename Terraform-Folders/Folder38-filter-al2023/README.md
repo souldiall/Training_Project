@@ -34,7 +34,7 @@ Folder38-filter-al2023/
 Amazon Linux 2023 AMIs follow the naming pattern:
 
 Code
-al2023-ami-*-x86_64
+al2023-ami-*-x86_64, x86_64", hvm, ebs, available.  
 Terraform filter: "Fetches the most recent Amazon Linux 2023 AMI ID based on specified filters."
 data "aws_ami" "al2023" {
   most_recent = true
