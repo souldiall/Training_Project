@@ -1,4 +1,4 @@
-# Folder38-filter-al2023
+# project38-filter-al2023
 Terraform configuration for deploying three Amazon Linux 2023 EC2 instances using:
 
 for_each with a map(string)
