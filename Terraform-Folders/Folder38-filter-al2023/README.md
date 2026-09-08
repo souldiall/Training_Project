@@ -114,11 +114,13 @@ server3
 
 All running Amazon Linux 2023.
 ### How to Deploy
-1. Initialize Terraform
+1. Initialize Terraform:
 terraform init
 2. Validate
-terraform validate
+terraform validate:
 3. Preview
-terraform plan
+terraform plan:
 4. Deploy
-terraform destroy
+terraform apply -auto-approve
+5. CleanUp:
+terraform destroy -auto-approve   
