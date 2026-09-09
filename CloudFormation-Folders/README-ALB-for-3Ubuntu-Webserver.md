@@ -98,8 +98,9 @@ InstanceType	t3.micro	EC2 instance type
 UbuntuAmiId	ami-0fc5d935ebf8bc3bc	Ubuntu AMI
 
 
-3. Launch Stack
-Launching the CloudFormation Stack (Full Step-by-Step Guide)
+3. Launch Stack:
+Launching the CloudFormation Stack (Full Step-by-Step Guide):
+
 01
 Open CloudFormation Console
 You begin by accessing the CloudFormation service where stacks are created and managed.
