@@ -29,7 +29,7 @@ Code
         | EC2 #1    | | EC2 #2    | | EC2 #3    |
         | Apache2   | | Apache2   | | Apache2   |
         +-----------+ +-----------+ +-----------+
-📦 Resources Created
+## Resources Created
 Networking
 VPC (10.0.0.0/16)
 
