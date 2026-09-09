@@ -120,15 +120,15 @@ Apply the correct UserData
 Launch all three EC2 instances
 
 ### Testing the Deployment
-#### Windows Instance
+#### 1) Windows Instance
 Open browser →
 http://<Windows-Instance-Public-IP>
 
-#### Amazon Linux Instance
+#### 2) Amazon Linux Instance
 Open browser →
 http://<AmazonLinux-Instance-Public-IP>
 
-#### Ubuntu Instance
+#### 3) Ubuntu Instance
 Open browser →
 http://<Ubuntu-Instance-Public-IP>
 
