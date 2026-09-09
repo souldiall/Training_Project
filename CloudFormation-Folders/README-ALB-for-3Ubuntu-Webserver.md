@@ -377,7 +377,7 @@ Apache started before file was written
 
 UserData syntax error
 
-## How to Fix?
+### How to Fix?
 
 Check UserData logs:
 /var/log/cloud-init-output.log
