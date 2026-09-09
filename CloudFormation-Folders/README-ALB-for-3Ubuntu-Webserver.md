@@ -102,7 +102,8 @@ UbuntuAmiId	ami-0fc5d935ebf8bc3bc	Ubuntu AMI
 Launching the CloudFormation Stack (Full Step-by-Step Guide):
 
 01
-Open CloudFormation Console
+Open CloudFormation Console:
+
 You begin by accessing the CloudFormation service where stacks are created and managed.
 
 AWS Console → Services → CloudFormation
@@ -112,7 +113,8 @@ Make sure you are in the correct AWS Region
 Click Stacks in the left navigation panel
 
 02
-Start Creating a New Stack
+Start Creating a New Stack:
+
 Start Here
 This step initializes the stack creation workflow.
 
@@ -121,7 +123,8 @@ Click Create stack
 Select With new resources (standard)
 
 03
-Upload Your Template File
+Upload Your Template File:
+
 You provide your JSON template so CloudFormation can read and deploy resources.
 
 Under Prepare template, choose Template source: Upload a template file
@@ -131,7 +134,8 @@ Click Choose file and select ALB-for-3-Ubuntu-WebServer-TemplateCloudFormation.j
 Click Next
 
 04
-Specify Stack Details
+Specify Stack Details:
+
 You name the stack and configure template parameters.
 
 Enter a stack name (e.g., ALB-Ubuntu-3WebServer-Stack)
@@ -151,7 +155,8 @@ UbuntuAmiId
 Click Next
 
 05
-Configure Stack Options
+Configure Stack Options:
+
 Optional settings such as tags, permissions, and rollback behavior.
 
 (Optional) Add tags like Project: ALB-Lab
@@ -161,7 +166,8 @@ Leave IAM, rollback, and advanced options as default unless required
 Click Next
 
 06
-Review and Submit
+Review and Submit:
+
 Deployment Begins
 Final verification before CloudFormation begins provisioning resources.
 
@@ -172,7 +178,8 @@ Scroll down and click Submit
 CloudFormation begins creating your VPC, subnets, ALB, EC2 instances, and security groups
 
 07
-### Monitor Stack Creation
+### Monitor Stack Creation:
+
 You track progress and ensure all resources are created successfully.
 
 Watch the Events tab for real-time updates
@@ -182,7 +189,8 @@ Wait until the stack status becomes CREATE_COMPLETE
 If any resource fails, CloudFormation will show detailed error messages
 
 08
-Retrieve the ALB DNS Name
+Retrieve the ALB DNS Name:
+
 Success
 This is the final step — testing your load balancer.
 
@@ -192,6 +200,7 @@ Copy the value of ALBDNS
 
 Paste it into your browser and refresh several times to see Server 1, 2, and 3 responses
 4. Test the ALB
+
 After deployment:
 
 Go to EC2 → Load Balancers
