@@ -1,6 +1,6 @@
 📘 README — Multi‑OS CloudFormation EC2 Deployment
-Project: Multi-OS-Template-CloudFormation.json  
-Purpose: Deploy three EC2 instances, each running a different OS: Windows Server, Amazon Linux, and Ubuntu Server — using a single CloudFormation template with OS‑based conditions.
+# Project: Multi-OS-Template-CloudFormation.json  
+## Purpose: Deploy three EC2 instances, each running a different OS: Windows Server, Amazon Linux, and Ubuntu Server — using a single CloudFormation template with OS‑based conditions.
 
 # Overview
 This project demonstrates how to deploy multiple operating systems using one CloudFormation template.
@@ -78,10 +78,7 @@ Each instance writes custom HTML to its web root.
 1. Upload the Template
 Upload Multi-OS-Template-CloudFormation.json to:
 
-S3 bucket
-OR
-
-Directly into the CloudFormation console
+directly into the CloudFormation console
 
 2. Create the Stack
 In AWS Console:
