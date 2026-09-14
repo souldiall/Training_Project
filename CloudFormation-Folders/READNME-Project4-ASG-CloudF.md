@@ -104,7 +104,6 @@ Sign in to the **AWS Management Console**, then navigate to **Services → Cloud
 This project demonstrates how AWS CloudFormation can be used to provision and manage an Auto Scaling Group in a repeatable, version-controlled, and automated manner. By defining infrastructure as code, the deployment becomes consistent across environments, easier to audit, and simple to tear down or redeploy. The ASG ensures that the application layer can scale elastically in response to real-world traffic patterns, improving both availability and cost efficiency compared to manually managed EC2 fleets.
 Implementing an Auto Scaling Group (ASG) in CloudFormation gives you a fully automated, self‑healing, and scalable EC2 architecture. By defining your infrastructure as code, you ensure consistency, repeatability, and easier long‑term maintenance. When combined with a Launch Template, an Application Load Balancer, and proper health checks, your ASG becomes capable of handling variable workloads while maintaining high availability across multiple Availability Zones.
 
-This approach also sets the foundation for more advanced patterns such as blue/green deployments, immutable infrastructure, and automated scaling based on application‑level metrics. In short, CloudFormation allows you to build a production‑ready scaling system that is predictable, secure, and easy to evolve.
 ---
 
 ## Lessons Learned
